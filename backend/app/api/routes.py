@@ -32,7 +32,7 @@ async def get_criteria():
 async def get_projects(
     force_refresh: bool = Query(False, description="Bypass cache and query live API"),
     use_mock: bool = Query(False, description="Use verified mock dataset"),
-    apply_filters: bool = Query(True, description="Apply the 6 Spredo filtering criteria"),
+    apply_filters: bool = Query(True, description="Apply the 6 screening criteria"),
     max_fdv: Optional[float] = Query(None, description="Optional override/filter for maximum FDV"),
     search: Optional[str] = Query(None, description="Optional search by project name or symbol"),
 ):

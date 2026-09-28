@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 class ProjectFilterService:
     """
-    Evaluates crypto projects against Spredo's 6 strict criteria:
+    Evaluates crypto projects against the 6 strict screening criteria:
     1. Market Capitalization (mcap) > 0
     2. preview_listing == true
     3. Max Supply == Total Supply (both non-null)
