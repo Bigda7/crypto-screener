@@ -23,7 +23,18 @@ class ProjectsResponse(BaseModel):
     total: int
     data: List[ProjectData]
     cached: bool = False
+    source: str = "coingecko_live"
     timestamp: str
+
+
+class CriteriaResponse(BaseModel):
+    min_mcap: float
+    require_preview_listing: bool
+    supply_rule: str
+    max_fdv: float
+    min_24h_volume: float
+    min_tvl: float
+
 
 
 class HealthResponse(BaseModel):
