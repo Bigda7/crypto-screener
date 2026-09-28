@@ -19,6 +19,7 @@ export interface ProjectsResponse {
   total: number;
   data: Project[];
   cached: boolean;
+  source: string;
   timestamp: string;
 }
 
